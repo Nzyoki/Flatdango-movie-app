@@ -1,7 +1,54 @@
-body{
+body {
     background-color: aliceblue;
+    justify-content: center;
 }
 
-div{
-    background-color: aqua;
+#movieDetails {
+    background-color: #fff;
+    text-align: center;
+}
+
+#poster {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#title,
+#runtime,
+#showtime,
+#tickets {
+    color: #555;
+}
+
+#buyTicket {
+    background-color: #f44336;
+    color: white;
+}
+
+#buyTicket:hover {
+    background-color: #2fd33f;
+}
+
+#films {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#films .film {
+    background-color: #f9f9f9;
+}
+
+#films .film:hover {
+    background-color: #eeeeee;
+}
+
+#films .film:active {
+    background-color: #ddd;
+}
+
+h2 {
+    text-align: center;
 }
