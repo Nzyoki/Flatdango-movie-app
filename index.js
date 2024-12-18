@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     movieList.appendChild(listItem);
 
                     // display movie details upon clicking
-                    listItem.addEventListener("click", () => { // Added missing event listener
+                    listItem.addEventListener("click", () => {
                         displayFilmDetails(film);
                         setupBuyTicketButton(film);
                     });
