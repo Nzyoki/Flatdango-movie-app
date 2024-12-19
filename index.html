@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie</title>
+    <title>Movie App</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
     <h2>Moviesss</h2>
-    <section id="movieDetails">
+    <div class="container">
+        <ul id="films">
+            <!-- movies will be populated from the db file -->
+        </ul>
 
-        <img id="poster" alt="poster">
+        <div id="movieDetails">
+
+        <img id="poster" alt="poster" src="poster">
 
         <div id="title">Title</div>
         <div id="runtime">Runtime</div>
@@ -20,10 +25,9 @@
 
         <button id="buyTicket">Buy Ticket</button>
 
-        <ul id="films">
-            <!-- movies will be populated from the db file -->
-        </ul>
-    
+       </div>
+    </div>
+
     </section>
     <script src="index.js"></script>
 </body>

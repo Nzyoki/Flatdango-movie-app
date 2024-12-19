@@ -1,6 +1,6 @@
-
 body {
-    background-color: aliceblue;
+    background-image: url("Movie.jpg");
+    background-size: cover;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -11,8 +11,17 @@ body {
 
 h2 {
     text-align: center;
-    color: #333;
+    color: white;
     margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+
 }
 
 #movieDetails {
@@ -31,7 +40,10 @@ h2 {
     margin-bottom: 20px;
 }
 
-#title,#runtime,#showtime,#tickets {
+#title,
+#runtime,
+#showtime,
+#tickets {
     color: #555;
     margin: 10px 0;
     font-size: 16px;
@@ -55,6 +67,7 @@ h2 {
     list-style-type: none;
     padding: 0;
     margin-top: 20px;
+    width: 300px;
 }
 
 #films .film {
@@ -86,4 +99,9 @@ h2 {
     border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
+}
+
+.sold-out {
+    text-decoration: line-through;
+    color: #2fd33f;
 }
