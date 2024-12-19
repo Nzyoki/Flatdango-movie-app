@@ -15,10 +15,7 @@ body {
     margin-bottom: 20px;
 }
 
-#title,
-#runtime,
-#showtime,
-#tickets {
+#title,#runtime,#showtime,#tickets {
     color: #555;
 }
 
