@@ -1,21 +1,22 @@
-const url = "http://localhost:3000/films";
+//const url = "http://localhost:3001/films";
 
 document.addEventListener("DOMContentLoaded", () => {
+
     //first film details
     const displayFirstFilm = () => {
-        fetch(url)
+        fetch("http://localhost:3001/films")
             .then(r => r.json())
             .then(data => {
                 const firstFilm = data[0];
-                displayFilmDetails(firstFilm); 
-                setupBuyTicketButton(firstFilm); 
+                displayFilmDetails(firstFilm);
+                setupBuyTicketButton(firstFilm);
             })
             .catch(error => console.error("Error fetching the first film:", error));
     };
 
     //list of films
     const filmList = () => {
-        fetch(url)
+        fetch("http://localhost:3001/films")
             .then(r => r.json())
             .then(data => {
                 const movieList = document.getElementById("films");
@@ -39,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Display film details
     const displayFilmDetails = (film) => {
         const filmPoster = document.getElementById("poster");
-        const filmTitle = document.getElementById("tittle");
+        const filmTitle = document.getElementById("title");
         const filmRuntime = document.getElementById("runtime");
         const filmShowtime = document.getElementById("showtime");
         const filmTickets = document.getElementById("tickets");

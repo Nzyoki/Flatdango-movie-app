@@ -1,11 +1,27 @@
+
 body {
     background-color: aliceblue;
     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 #movieDetails {
     background-color: #fff;
     text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
 #poster {
@@ -15,16 +31,20 @@ body {
     margin-bottom: 20px;
 }
 
-#title,
-#runtime,
-#showtime,
-#tickets {
+#title,#runtime,#showtime,#tickets {
     color: #555;
+    margin: 10px 0;
+    font-size: 16px;
 }
 
 #buyTicket {
     background-color: #f44336;
     color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 #buyTicket:hover {
@@ -39,6 +59,10 @@ body {
 
 #films .film {
     background-color: #f9f9f9;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 #films .film:hover {
@@ -49,6 +73,17 @@ body {
     background-color: #ddd;
 }
 
-h2 {
-    text-align: center;
+#films .film.sold-out {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
 }
