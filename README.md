@@ -8,3 +8,5 @@ To run and view the movies from the json file:
 -run this command :json-server --watch db.json
 
 the buy ticket option is changed to sold out once the available tickets are not available.
+License
+The project is under the MIT license
